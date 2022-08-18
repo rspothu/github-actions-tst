@@ -9,7 +9,13 @@ jobs:
       - name: List files
         run: |
           pwd
-          ls
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{github.token}}"
+          # git clone git@github:$GITHUB_REPOSITORY
+          # git checkout $GITHUB_SHA
       - name: Checkout
         uses: actions/checkout@v1
       - name: List files
@@ -23,4 +29,3 @@ jobs:
           who-to-greet: Ramesh
       - name: Greet output
         run: echo "${{ steps.greet.outputs.time}}"
-        
