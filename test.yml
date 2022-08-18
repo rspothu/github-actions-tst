@@ -4,7 +4,7 @@ address: dwhui: adaf,
 active: true,
 key:
     key: value
-    key2: 33
+    key2: 333
     key3:
         key: value
         key2: 33
@@ -15,9 +15,9 @@ array:
 jsonArrya: [item1, item2]
 objectsArrys:
     - key: value
-     key2: value
+      key2: value
     - key3: value
-     key3: value
+      key3: value
 longText: |
     asdkjhadsf87asdhjfhasdkflhsdak
     asdkjhadsf87asdhjfhasdkflhsdakasdjkfaskjdf
