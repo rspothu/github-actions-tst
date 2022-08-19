@@ -25,6 +25,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: ${{matrix.node_version}}
-        run: |
-          node -v
-          echo $IS_UBUNTU_8
+        # run: |
+        #   node -v
+        #   echo $IS_UBUNTU_8
